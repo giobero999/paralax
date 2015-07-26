@@ -1,0 +1,133 @@
+.content
+	article
+		padding: 100px 0
+		max-width:640px
+		margin: 0 auto
+	  text-align:center
+
+h1
+	text-align:center
+
+
+
+
+.content
+	max-width:640px
+	article
+	padding:100px 0
+	margin: 0 auto
+	text-align:center
+
+.row
+	margin:0
+
+
+img
+	max-width:100%
+//paralax
+.bird-box
+	height:400px
+	position:relative
+	width:100%
+	background:
+		image: url(../img/bird-bg.jpg)
+		size:auto 400px
+		position:top center
+		attachment:fixed
+	overflow:hidden
+
+.logo
+	height: 80px
+	width:100%
+	background:
+		color:none
+		image:url(../img/black-bird-logo.svg)
+		position: center
+		repeat:no-repeat
+	position: absolute
+	top:50%
+	margin-top: -40px
+
+.fore-bird
+	width: 960px
+	height: 733px
+	background:
+		//color: transparentize(pink, 0.3)
+		image:url(../img/fore-bird.png)
+		position: right bottom
+		repeat:no-repeat
+	position: absolute
+	left:50%
+	margin-left:-480px
+	top:200px
+
+.back-bird
+	width: 960px
+	height: 298px
+	background:
+		//color: transparentize(pink, 0.3)
+		image:url(../img/back-bird.png)
+		repeat:no-repeat
+		position: top left
+		size: 200px
+	position: absolute
+	left:50%
+	margin-left:-480px
+
+
+//Modal Grid
+
+.clothes-pics
+	figure
+		margin-right:10px
+		margin-bottom:20px
+		position: relative
+		transform:translateX(20px)
+		opacity:0
+		transition: all 0.3s ease-in-out
+		overflow:hidden
+
+		&.is-showing
+			opacity:1
+			transform:translateX(0px)
+
+		img
+			display: block
+			transform:scale(1)
+			transition: all 0.3s
+			cursor:pointer
+		&:hover
+			figcaption
+				left:0%
+			img
+				transform:scale(1.2)
+
+figcaption
+	position: absolute
+	bottom:8px
+	left:-100%
+	background:black
+	color:white
+	padding:2px 8px
+	transition:all 0.3s
+
+//large-window
+.large-window
+	height: 640px
+	background:
+		image:url(../img/model2.jpg)
+		position: center 0px
+		repeat:repeat-y
+		attachment:fixed
+	margin-top:100px
+	position: relative
+	border-radius: 50%
+
+	.window-tint
+		background-color: rgba(0,0,0,0.5)
+		height: 100%
+		width: 100%
+		border-radius: 50%
+
+		.promo-text
+			color:#f6f6f6

@@ -1,0 +1,110 @@
+.content article {
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+    margin-text-align: center; }
+
+h1 {
+  text-align: center; }
+
+.content {
+  max-width: 640px;
+  padding: 100px 0;
+  margin: 0 auto;
+  text-align: center; }
+
+.row {
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+.bird-box {
+  height: 400px;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/bird-bg.jpg);
+  background-size: auto 400px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden; }
+
+.logo {
+  height: 80px;
+  width: 100%;
+  background-color: none;
+  background-image: url(../img/black-bird-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px; }
+
+.fore-bird {
+  width: 960px;
+  height: 733px;
+  background-image: url(../img/fore-bird.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 200px; }
+
+.back-bird {
+  width: 960px;
+  height: 298px;
+  background-image: url(../img/back-bird.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px; }
+
+.clothes-pics figure {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  transform: translateX(20px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden; }
+  .clothes-pics figure.is-showing {
+    opacity: 1;
+    transform: translateX(0px); }
+  .clothes-pics figure img {
+    display: block;
+    transform: scale(1);
+    transition: all 0.3s;
+    cursor: pointer; }
+  .clothes-pics figure:hover figcaption {
+    left: 0%; }
+  .clothes-pics figure:hover img {
+    transform: scale(1.2); }
+
+figcaption {
+  position: absolute;
+  bottom: 8px;
+  left: -100%;
+  background: black;
+  color: white;
+  padding: 2px 8px;
+  transition: all 0.3s; }
+
+.large-window {
+  height: 640px;
+  background-image: url(../img/model2.jpg);
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin-top: 100px;
+  position: relative;
+  border-radius: 50%; }
+  .large-window .window-tint {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; }
+    .large-window .window-tint .promo-text {
+      color: #f6f6f6; }

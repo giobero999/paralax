@@ -1,0 +1,20 @@
+{
+  "name": "paralax-header",
+  "version": "0.0.0",
+  "homepage": "https://github.com/giobero999/html5-template",
+  "authors": [
+    "giobero999 <giobero999@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "skeleton": "~2.0.4"
+  }
+}
